@@ -72,7 +72,8 @@ body {
   .calculator {
     width: 85vw;
     height: 52vh;
-    margin-bottom: 5rem;
+    position: fixed;
+    top:6rem;
   }
 
 }

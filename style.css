@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.calculator {
+  
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 30vw;
+  height: 55vh;
+  margin-bottom: 5rem
+}
+
+.screen {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.714285714em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+  min-height: 7rem;
+  max-height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.buttons {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+}
+.buttons > button {
+  font-size: 2rem;
+  font-weight: 350;
+  cursor: pointer;
+}
+.equal-btn {
+  grid-column: -2;
+  /* this lines means it will start from 2nd row and span over 4 rows from there */
+  grid-row: 2 / span 4;
+  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  outline: none;
+  border: none;
+}
+
+.prev-operand {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.curr-operand {
+  font-size: 2.5rem;
+}
+
+
+/*  responsive design */
+@media (max-width:1024px){
+
+
+  .calculator {
+    width: 70vw;
+    height: 50vh;
+    margin-bottom: 2rem;
+  }
+
+}
